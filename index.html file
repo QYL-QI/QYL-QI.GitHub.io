@@ -1,8 +1,10 @@
 <!DOCTYPE html> 
 <html>
   <head>
-    <title>Your Name - Homepage</title>
-  </head>
+  <title>Your Name - Homepage</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
   
   <body>
     <h1>Hi, I'm Qiyan Luo!</h1>  
