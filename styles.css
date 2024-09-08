@@ -3,98 +3,109 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f5; /* 柔和的浅灰色背景 */
-    color: #333; /* 深灰色文本 */
+    background-color: #f0f0f5;
+    color: #333;
     line-height: 1.6;
 }
 
 /* 左侧导航栏 */
-.sidebar {
+#sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px; /* 宽一点，更显气派 */
+    width: 250px;
     height: 100%;
-    background-color: #2c3e50; /* 深色背景，显得稳重 */
+    background-color: #2c3e50;
     color: white;
-    display: flex;
-    flex-direction: column;
-    padding-top: 40px; /* 让顶部留一些空间 */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 给导航栏加点阴影，提升质感 */
+    padding-top: 40px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar a {
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin-bottom: 20px;
+}
+
+#sidebar a {
     text-decoration: none;
     color: white;
     padding: 15px 30px;
+    display: block;
     font-size: 18px;
-    font-weight: 500; /* 稍微加粗，提升高端感 */
+    font-weight: 500;
     transition: background 0.3s ease;
 }
 
-.sidebar a:hover {
-    background-color: #34495e; /* 鼠标悬停时的颜色变化 */
-    border-radius: 4px; /* 稍微圆角，提升细节感 */
+#sidebar a:hover {
+    background-color: #34495e;
+    border-radius: 4px;
 }
 
 /* 内容区域 */
-.content {
-    margin-left: 250px; /* 留出导航栏的宽度 */
-    padding: 50px; /* 内边距增加，提升视觉的宽敞感 */
-    background-color: white; /* 白色背景，提升内容区的清爽感 */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* 柔和的阴影，增加层次感 */
-    min-height: 100vh; /* 确保内容区域至少占满整个视口高度 */
+#content {
+    margin-left: 250px;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    min-height: 100vh;
 }
 
-/* 个人照片样式 */
+/* 照片区域 */
+.profile-photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px; /* 可根据需要调整 */
+    background-color: #f0f0f5; /* 与整体背景一致 */
+}
+
 .profile-photo {
     width: 180px;
     height: 180px;
-    border-radius: 50%; /* 圆形照片 */
-    background-color: #3498db; /* 蓝色背景，现代感十足 */
-    margin: 0 auto; /* 照片在导航栏之外的部分居中 */
+    border-radius: 50%;
+    background-color: #3498db;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 5px solid white;
     display: block;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 照片的阴影，提升浮雕效果 */
-    border: 5px solid white; /* 白色边框，让照片更突出 */
 }
 
 /* 标题样式 */
 h1 {
     font-size: 36px;
     margin-top: 20px;
-    color: #2c3e50; /* 深色标题，庄重感 */
+    color: #2c3e50;
     text-align: center;
-    letter-spacing: 1.5px; /* 增加字母间距，显得更精致 */
+    letter-spacing: 1.5px;
 }
 
 /* 段落样式 */
 p {
     font-size: 18px;
-    margin-top: 20px;
     text-align: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #555; /* 稍微淡一点的文本色，阅读感更好 */
-    line-height: 1.8; /* 行距增加，文本更舒适 */
+    color: #555;
+    line-height: 1.8;
 }
 
-/* 响应式设计，让布局在不同设备上看起来都不错 */
+/* 响应式设计 */
 @media (max-width: 768px) {
-    .sidebar {
-        width: 200px; /* 小屏幕时导航栏稍微缩小 */
+    #sidebar {
+        width: 200px;
     }
     
-    .content {
-        margin-left: 200px; /* 留出小一点的导航栏宽度 */
+    #content {
+        margin-left: 200px;
         padding: 20px;
     }
     
     h1 {
-        font-size: 28px; /* 小屏幕时标题缩小 */
+        font-size: 28px;
     }
     
     p {
-        font-size: 16px; /* 小屏幕时文本大小调整 */
+        font-size: 16px;
     }
 }
