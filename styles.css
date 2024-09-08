@@ -65,7 +65,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px; /* 可根据需要调整 */
+    width: 100%; /* 确保容器宽度填满内容区域 */
+    height: auto; /* 根据内容自动调整高度 */
     background-color: #f0f0f5; /* 与整体背景一致 */
 }
 
@@ -76,7 +77,6 @@ body {
     background-color: #3498db;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 5px solid white;
-    display: block;
 }
 
 /* 标题样式 */
@@ -111,11 +111,6 @@ p {
         font-size: 28px;
     }
     
-    p {
-        font-size: 16px;
-    }
-}
-
     p {
         font-size: 16px;
     }
