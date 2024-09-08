@@ -1,46 +1,95 @@
-/* 页面布局设置 */
-#container {
+/* General styling */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navigation bar */
+.navbar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #2C3E50;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    padding-top: 50px;
 }
 
-/* 左侧导航栏样式 */
-#sidebar {
-    width: 200px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-right: 2px solid #ddd;
-}
-
-#sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#sidebar ul li {
-    margin-bottom: 10px;
-}
-
-#sidebar ul li a {
+.navbar a {
+    padding: 15px 20px;
     text-decoration: none;
-    color: #3498db;
+    font-size: 18px;
+    color: #ecf0f1;
+    display: block;
+    transition: background-color 0.3s ease;
 }
 
-#sidebar ul li a:hover {
-    text-decoration: underline;
+.navbar a:hover {
+    background-color: #34495E;
 }
 
-/* 内容区样式 */
-#content {
-    flex: 1;
+/* Content styling */
+.main-content {
+    margin-left: 250px;
     padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #2C3E50;
+}
+
+h1 {
+    font-size: 36px;
 }
 
 h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
-    margin-top: 30px;
+    font-size: 28px;
 }
 
-/* 样式文件结束 */
+h3 {
+    font-size: 22px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Button styling */
+button {
+    background-color: #1ABC9C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #16A085;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 250px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
