@@ -72,7 +72,7 @@ body {
     height: 335px; /* 0.6倍的高度 */
     background-color: #34495e;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0);
-    border: 5px solid white; /* 可选：保留边框 */
+    /*border: 5px solid white; /* 可选：保留边框 */
     border-radius: 0; /* 确保照片为矩形 */
 
 
