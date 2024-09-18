@@ -55,39 +55,27 @@ body {
     /* 使用 flexbox 使内容区域内部的内容居中 */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;  /* 左对齐 */
-}
-
-/* 布局容器，包含个人信息和照片 */
-.personal-info-container {
-    display: flex; /* 使用 flex 布局水平排列 */
-    justify-content: space-between; /* 左右分布信息和照片 */
-    align-items: flex-start; /* 确保两者顶部对齐 */
-    padding: 40px; /* 调整整体容器的内边距 */
-    background-color: white; /* 确保背景颜色一致 */
-}
-
-/* 个人信息部分 */
-.personal-info {
-    flex: 1; /* 使个人信息占据左边空间 */
-    margin-right: 20px; /* 给照片留出间隔 */
+    align-items: center; /* 水平居中内容 */
 }
 
 /* 照片区域 */
 .profile-photo-container {
     display: flex;
-    justify-content: flex-start; /* 确保照片靠左对齐（在右边） */
-    align-items: center; /* 垂直居中照片与内容 */
-    background-color: white; /* 照片背景颜色与网站背景一致 */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* 确保容器宽度填满内容区域 */
+    height: auto; /* 根据内容自动调整高度 */
+    margin-bottom: 20px; /* 与其他内容分隔 */
+    background-color: #f0f0f5; /* 与整体背景一致 */
 }
 
 .profile-photo {
-    width: 223px; 
-    height: 335px; 
-    background-color: white; /* 照片背景颜色与网站背景一致 */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0); /* 移除阴影 */
-    border: 5px solid white; /* 保持白色边框，匹配背景 */
-    border-radius: 0; /* 保持矩形形状 */
+    width: 372px;
+    height: 559px;
+    border-radius: 50%;
+    background-color: #3498db;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 5px solid white;
 }
 
 /* 标题样式 */
@@ -127,11 +115,5 @@ p {
     }
 }
 
-    }
-}
-
-ChatGPT said:
-ChatGPT
-Memory updated
     }
 }
