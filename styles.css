@@ -1,4 +1,3 @@
-/* 页面整体样式 */
 body {
     margin: 0;
     padding: 0;
@@ -53,41 +52,45 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     min-height: 100vh;
     
+    /* 使用 flexbox 使内容区域内部的内容居中 */
     display: flex;
-    flex-direction: column; /* 从上到下排列 */
-    align-items: flex-start; /* 保证文字部分左对齐 */
+    flex-direction: column;
+    align-items: flex-start;  /* 左对齐 */
 }
 
+/* 照片区域 */
 /* 照片区域 */
 .profile-photo-container {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 20px; /* 保证照片和右边、顶部之间有一定的间距 */
+    padding: 20px; /* 照片与页面右边、顶部之间的间距 */
+    background-color: #f0f0f5; /* 与整体背景一致 */
 }
 
 .profile-photo {
-    width: 372px;
-    height: auto;
-    border-radius: 10px;
+    width: 3723px; /* 设置照片的宽度 */
+    height: 5585px; /* 设置照片的高度 */
     background-color: #3498db;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    border: 5px solid white;
+    border: 5px solid white; /* 可选：保留边框 */
+    border-radius: 0; /* 去除圆形框，确保照片为矩形 */
 }
+
 
 /* 标题样式 */
 h1 {
     font-size: 36px;
     margin-top: 20px;
     color: #2c3e50;
-    text-align: left; /* 确保标题左对齐 */
+    text-align: center;
     letter-spacing: 1.5px;
 }
 
 /* 段落样式 */
 p {
     font-size: 18px;
-    text-align: left; /* 段落左对齐 */
+    text-align: center;
     color: #555;
     line-height: 1.8;
 }
@@ -102,17 +105,6 @@ p {
         margin-left: 200px;
         padding: 20px;
     }
-
-    .profile-photo-container {
-        position: static;
-        margin-top: 20px;
-        width: 100%; /* 确保小屏幕时照片占满宽度 */
-        text-align: center; /* 在移动设备上居中照片 */
-    }
-
-    .profile-photo {
-        width: 100%; /* 确保照片在小屏幕上自适应 */
-    }
     
     h1 {
         font-size: 28px;
@@ -123,6 +115,11 @@ p {
     }
 }
 
-        font-size: 16px;
+    }
+}
+
+ChatGPT said:
+ChatGPT
+Memory updated
     }
 }
