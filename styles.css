@@ -53,27 +53,21 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     min-height: 100vh;
     
-    /* 使用 flexbox 使内容区域内部的内容居中 */
     display: flex;
-    flex-direction: column;
-    align-items: center; /* 水平居中内容 */
+    flex-direction: row; /* 水平方向布局，保证照片在文字旁边 */
+    justify-content: flex-start; /* 确保内容靠左对齐 */
+    align-items: flex-start;
 }
 
 /* 照片区域 */
 .profile-photo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* 确保容器宽度填满内容区域 */
-    height: auto; /* 根据内容自动调整高度 */
-    margin-bottom: 20px; /* 与其他内容分隔 */
-    background-color: #f0f0f5; /* 与整体背景一致 */
+    margin-left: 50px; /* 给图片与左侧内容留出空间 */
 }
 
 .profile-photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
+    width: 372px; /* 设置比例缩小的宽度 */
+    height: auto; /* 保持图片原比例 */
+    border-radius: 10px; /* 可以根据需求调整 */
     background-color: #3498db;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 5px solid white;
@@ -84,14 +78,14 @@ h1 {
     font-size: 36px;
     margin-top: 20px;
     color: #2c3e50;
-    text-align: center;
+    text-align: left; /* 左对齐标题 */
     letter-spacing: 1.5px;
 }
 
 /* 段落样式 */
 p {
     font-size: 18px;
-    text-align: center;
+    text-align: left; /* 左对齐段落 */
     color: #555;
     line-height: 1.8;
 }
@@ -105,6 +99,16 @@ p {
     #content {
         margin-left: 200px;
         padding: 20px;
+        flex-direction: column; /* 移动设备上改为垂直布局 */
+    }
+
+    .profile-photo-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .profile-photo {
+        width: 100%; /* 保证图片自适应 */
     }
     
     h1 {
@@ -113,8 +117,5 @@ p {
     
     p {
         font-size: 16px;
-    }
-}
-
     }
 }
