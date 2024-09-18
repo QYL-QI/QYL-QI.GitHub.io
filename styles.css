@@ -52,24 +52,25 @@ body {
     background-color: white;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     min-height: 100vh;
+    
     display: flex;
-    justify-content: space-between; /* 保证文字和照片在两侧 */
-    align-items: flex-start; /* 确保两侧内容在顶部对齐 */
+    flex-direction: column; /* 从上到下排列 */
+    align-items: flex-start; /* 保证文字部分左对齐 */
 }
 
-/* 信息和照片的容器 */
-#personal-info {
-    flex: 1; /* 文字部分占据左侧空间 */
-}
-
+/* 照片区域 */
 .profile-photo-container {
-    margin-left: 20px; /* 照片与文字之间的间隔 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px; /* 保证照片和右边、顶部之间有一定的间距 */
 }
 
 .profile-photo {
-    width: 372px; /* 照片宽度设为372px，保持合适的比例 */
+    width: 372px;
     height: auto;
     border-radius: 10px;
+    background-color: #3498db;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 5px solid white;
 }
@@ -100,16 +101,17 @@ p {
     #content {
         margin-left: 200px;
         padding: 20px;
-        flex-direction: column; /* 小屏幕上使文字和照片垂直排列 */
     }
 
     .profile-photo-container {
-        margin-left: 0;
-        margin-top: 20px; /* 照片和文字垂直排列时的间隔 */
+        position: static;
+        margin-top: 20px;
+        width: 100%; /* 确保小屏幕时照片占满宽度 */
+        text-align: center; /* 在移动设备上居中照片 */
     }
 
     .profile-photo {
-        width: 100%; /* 小屏幕上照片自适应 */
+        width: 100%; /* 确保照片在小屏幕上自适应 */
     }
     
     h1 {
@@ -121,7 +123,6 @@ p {
     }
 }
 
-    p {
         font-size: 16px;
     }
 }
