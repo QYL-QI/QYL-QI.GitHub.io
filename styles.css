@@ -59,23 +59,23 @@ body {
 }
 
 /* 照片区域 */
-/* 照片区域 */
 .profile-photo-container {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 20px; /* 照片与页面右边、顶部之间的间距 */
+    padding: 40px; /* 照片与页面右边、顶部之间的间距 */
     background-color: #f0f0f5; /* 与整体背景一致 */
 }
 
 .profile-photo {
-    width: 1861px; /* 设置照片的宽度 */
-    height: 2793px; /* 设置照片的高度 */
+    width: 2234px; /* 0.6倍的宽度，四舍五入 */
+    height: 3351px; /* 0.6倍的高度 */
     background-color: #3498db;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 5px solid white; /* 可选：保留边框 */
-    border-radius: 0; /* 去除圆形框，确保照片为矩形 */
+    border-radius: 0; /* 确保照片为矩形 */
 }
+
 
 
 /* 标题样式 */
