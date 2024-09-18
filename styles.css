@@ -60,21 +60,24 @@ body {
 
 /* 照片区域 */
 .profile-photo-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 40px; /* 照片与页面右边、顶部之间的间距 */
-    background-color: #f0f0f5; /* 与整体背景一致 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: flex-start; /* 确保内容从顶部开始排列 */
+    padding: 40px 0; /* 调整顶部和底部的间距 */
+    background-color: white; /* 与网站背景一致，白色背景 */
+    width: 100%; /* 确保容器宽度与内容区域一致 */
+    height: auto;
 }
 
 .profile-photo {
-    width: 223px; /* 0.6倍的宽度，四舍五入 */
-    height: 335px; /* 0.6倍的高度 */
-    background-color: #3498db;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    border: 5px solid white; /* 可选：保留边框 */
-    border-radius: 0; /* 确保照片为矩形 */
+    width: 223px; 
+    height: 335px; 
+    background-color: white; /* 照片背景颜色与网站背景一致 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0); /* 可选的阴影效果 */
+    border: 5px solid white; /* 保持白色边框，匹配背景 */
+    border-radius: 0; /* 保持矩形形状 */
 }
+
 
 
 
