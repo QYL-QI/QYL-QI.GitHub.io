@@ -70,8 +70,8 @@ body {
 }
 
 .profile-photo {
-    width: 372px;
-    height: 559px;
+    width: 200px;
+    height: 300px;
     border-radius: 50%;
     background-color: #3498db;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
