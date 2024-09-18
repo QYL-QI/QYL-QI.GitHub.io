@@ -69,8 +69,8 @@ body {
 }
 
 .profile-photo {
-    width: 3723px; /* 设置照片的宽度 */
-    height: 5585px; /* 设置照片的高度 */
+    width: 1861px; /* 设置照片的宽度 */
+    height: 2793px; /* 设置照片的高度 */
     background-color: #3498db;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 5px solid white; /* 可选：保留边框 */
