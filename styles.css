@@ -68,8 +68,8 @@ body {
 }
 
 .profile-photo {
-    width: 2234px; /* 0.6倍的宽度，四舍五入 */
-    height: 3351px; /* 0.6倍的高度 */
+    width: 223px; /* 0.6倍的宽度，四舍五入 */
+    height: 335px; /* 0.6倍的高度 */
     background-color: #3498db;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 5px solid white; /* 可选：保留边框 */
