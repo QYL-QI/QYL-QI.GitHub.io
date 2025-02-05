@@ -58,13 +58,26 @@ body {
     align-items: center; /* 水平居中内容 */
 }
 
-.profile-photo {
-    width: 200px; /* 方形容器的宽度 */
-    height: 200px; /* 方形容器的高度 */
-    background-color: #3498db;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    object-fit: cover; /* 图片保持比例并填满容器 */
+/* 照片样式 */
+.profile-photo-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* 圆形显示 */
+    overflow: hidden; /* 确保图片不外溢 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    margin-bottom: 20px; /* 确保头像和标题之间有间距 */
+    display: flex;
+    justify-content: center; /* 横向居中 */
+    align-items: center; /* 纵向居中 */
 }
+
+.profile-photo {
+    width: 100%; /* 图片宽度填充父容器 */
+    height: 100%; /* 图片高度填充父容器 */
+    object-fit: cover; /* 保持图片比例，裁剪溢出部分 */
+    border-radius: 50%; /* 圆形图片 */
+}
+
 
 
 
