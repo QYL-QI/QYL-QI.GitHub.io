@@ -75,8 +75,9 @@ body {
     border-radius: 50%;
     background-color: #3498db;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-   /* border: 5px solid white;*/
+    object-fit: cover; /* 使图片覆盖容器，保持比例 */
 }
+
 
 /* 标题样式 */
 h1 {
