@@ -59,15 +59,7 @@ body {
 }
 
 /* 照片区域 */
-.profile-photo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* 确保容器宽度填满内容区域 */
-    height: auto; /* 根据内容自动调整高度 */
-    margin-bottom: 20px; /* 与其他内容分隔 */
-    background-color: #f0f0f5; /* 与整体背景一致 */
-}
+
 
 .profile-photo {
     width: 200px;
