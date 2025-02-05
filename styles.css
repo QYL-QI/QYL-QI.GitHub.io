@@ -71,12 +71,12 @@ body {
 
 .profile-photo {
     width: 200px;
-    height: 300px;
-    border-radius: 50%;
+    height: 200px; /* 保持为正方形 */
     background-color: #3498db;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     object-fit: cover; /* 使图片覆盖容器，保持比例 */
 }
+
 
 
 /* 标题样式 */
