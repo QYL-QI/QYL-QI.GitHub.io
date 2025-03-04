@@ -45,6 +45,13 @@ body {
 }
 
 /* 内容区域 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
 #content {
     margin-left: 250px;
     padding: 50px;
