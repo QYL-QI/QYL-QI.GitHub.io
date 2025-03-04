@@ -65,7 +65,7 @@ img {
 
 .profile-photo-container {
     width: 200px;
-    height: 300px;
+    height: 270px;
     overflow: hidden;
     border-radius: 0; /* 确保没有圆角 */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
