@@ -170,9 +170,23 @@
 	 Utilized a second-harmonic generation (SHG) crystal to frequency-double the output of the 1560 nm ECDL, 
 	 generating the target 780 nm wavelength for Rubidium experiments.
 	 <figure>
-        <img src="images/LD circuit.png" alt="LD circuit" width="600">
-        <figcaption style="text-align: center;">Laser Diode Circuit Design and Implementation</figcaption>
+        <img src="images/SHG efficiency.png" alt="SHG efficiency" width="600">
+        <figcaption style="text-align: center;">SHG efficiency curve, 780nm Output/1560nm Input</figcaption>
     </figure>
+	 Besides, I designed and built a transimpedance amplifier (TIA)-based photodetector (PD) for intensity monitoring,
+	 achieving a gain of R_{gain} = 30kΩ and a -3dB bandwidth of 9.47MHz.
+	  <figure>
+        <img src="images/PD Design.png" alt="PD Design" width="600">
+        <figcaption style="text-align: center;">Photo Detector Circuit Design </figcaption>
+    </figure>
+	 <figure>
+        <img src="images/PD realize.png" alt="PD realize" width="600">
+        <figcaption style="text-align: center;">Photo Detector Circuit Implementation </figcaption>
+    </figure>
+	 Furthermore, for intensity stabilization, I used a half-waveplate and PBS as the control actuator 
+	 and the photodetector (PD) signal as feedback, regulated by a PID controller to suppress intensity noise. 
+	 The frequency locking is achieved frequency locking to the Rubidium D2 line using Saturated Absorption Spectroscopy (SAS). Generated an error signal and fed it back to the ECDL's current
+	 and PZT controls via a PID servo to maintain long-term frequency stability. This step is undergoing.
 
 
 
