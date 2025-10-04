@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qiyan Luo - CV</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- 添加 MathJax 支持 -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
 </head>
 <body>
     <div id="container">
@@ -198,6 +214,14 @@
 	 and the photodetector (PD) signal as feedback, regulated by a PID controller to suppress intensity noise. 
 	 The frequency locking is achieved frequency locking to the Rubidium D2 line using Saturated Absorption Spectroscopy (SAS). Generated an error signal and fed it back to the ECDL's current
 	 and PZT controls via a PID servo to maintain long-term frequency stability. This step is undergoing.
+
+	 <li>
+    <strong>Dynamic Decoupling and Composite Pulses for Rubust trapped-ion Qubit Manipulation</strong>
+	<p style="text-align: left;">
+		Our $^{40}Ca^+$ trapped-ion system is a platform for building quantum repeaters, which are essential for long-distance quantum communication. However, the fragile quantum states stored in ions are susceptible to decoherence from environmental noise and suffer from control imperfection that limit gate fidelity. To address these challenges, techniques like dynamic decoupling to suppress qubit-environment interactions and composite pulses to make quantum operations resilient to static and dynamic errors—are critically 
+		employed to protect quantum information and enhance the fidelity of quantum memory and gate operations within the repeater nodes.
+		I investigated different dynamic decoupling regime including CPMG, Uhrig dynamic decoupling (UDD) and continuous dynamic decoupling (CDD),
+		simulated pulses function and constructed microwave system for dynamic decoupling. The method is a rotation about $\sigma_x$ 
 
 
 
