@@ -221,8 +221,13 @@
 		Our $^{40}Ca^+$ trapped-ion system is a platform for building quantum repeaters, which are essential for long-distance quantum communication. However, the fragile quantum states stored in ions are susceptible to decoherence from environmental noise and suffer from control imperfection that limit gate fidelity. To address these challenges, techniques like dynamic decoupling to suppress qubit-environment interactions and composite pulses to make quantum operations resilient to static and dynamic errors—are critically 
 		employed to protect quantum information and enhance the fidelity of quantum memory and gate operations within the repeater nodes.
 		I investigated different dynamic decoupling regime including CPMG, Uhrig dynamic decoupling (UDD) and continuous dynamic decoupling (CDD),
-		simulated pulses function and constructed microwave system for dynamic decoupling. We look at a simple case assuming initially $\sigma_z=1$.
-		Then a rotation about $\sigma_x$ is applied. For rotation $\gamma=\frac{\pi}{2}$, measuring $\sigma_y$ leads to the signal:
+		simulated pulses function and constructed microwave system for dynamic decoupling. 
+		
+		We look at a simple case assuming initially $\sigma_z=1$. Then 
+		a rotation about $\sigma_x$ is applied. For rotation $\gamma=\frac{\pi}{2}$, the state is rotated to xy-plane of Bloch sphere. 
+		We pass now to a sequence of pulses where the total time interval $0\rightarrow t$ is split into smaller intervals $0\rightarrow \delta_1 t\rightarrow \delta_2 t 
+		\right arrow \cdots \delta_n t \rightarrow t$. At each $\delta_i t$ a $\pi$-pulse is applied. For CPMG, equidistant sequence are used. For UDD, we 
+		set the equations for filter function: $y_n^{j}(z)|_{z=0}=0$, and $delta_j$ can be solved: $\delta_j=sin^2(\pi j/(2n+2))$. Then we have a strategy to maintain the coherence of a quantum bit 
 		
 
 
