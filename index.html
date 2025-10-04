@@ -225,10 +225,15 @@
 		<p>
 		We look at a simple case assuming initially $\sigma_z=1$. Then 
 		a rotation about $\sigma_x$ is applied. For rotation $\gamma=\frac{\pi}{2}$, the state is rotated to xy-plane of Bloch sphere. 
-		We pass now to a sequence of pulses where the total time interval $0\rightarrow t$ is split into smaller intervals $\delta_j t$, where $0<\delta_j<1$. At each $\delta_i t$ a $\pi$-pulse is applied. For CPMG, equidistant sequence are used. For UDD, we 
+		We pass now to a sequence of pulses where the total time interval $0\rightarrow t$ is split into smaller intervals $\delta_j t$, where $\delta_j\in (0,1)$. At each $\delta_i t$ a $\pi$-pulse is applied. For CPMG, equidistant sequence are used. For UDD, we 
 		set the equations for filter function: $y_n^{j}(z)|_{z=0}=0$, and $delta_j$ can be solved: $\delta_j=sin^2(\pi j/(2n+2))$. Then we have a strategy to maintain the coherence of a quantum bit 
 		For CDD, we realize dynamical decoupling for the suppression of Zeeman and
 quadrupole shifts by applying radiofrequency magnetic fields.
+			<figure>
+        <img src="images/UDD vs CPMG.png" alt="UDD vs CPMG" width="600">
+        <figcaption style="text-align: center;">Siganal vs. time for varies number of pulses. Solid lines for UDD, dashed-dotted lines for CPMG. From the top to the bottom, the noise is decreasing.</figcaption>
+    </figure>
+			
 
 
 
